@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muttakin1/node.git"
+    "url": "git+https://github.com/tabed10/node.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/muttakin1/node/issues"
+    "url": "https://github.com/tabed10/node/issues"
   },
-  "homepage": "https://github.com/muttakin1/node#readme",
+  "homepage": "https://github.com/tabed10/node#readme",
   "devDependencies": {
     "nodemon": "^1.19.1"
   }

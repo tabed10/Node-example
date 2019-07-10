@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Article</title>
+    </head>
+    <body>
+        <h1>Article</h1>
+        <input type="text" id="title" placeholder="blaa"><br>
+        <input type="text" id="content" placeholder="blaa"><br>
+        <input type="submit" value="Submit"> 
+        
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+
+        <script>
+            $("#submit").click(function(event){
+                var article = {
+                    title: $('#title').val(),
+                    content: $('content').val()
+                }
+                $.ajax({
+                    url: "/article/new",
+                    method: "POST",
+                    data: article
+                }).done(function(response){
+                    console.log(respose)
+                }).fail(function(response){
+                    console.log(response)
+                })
+            })
+        </script>
+    </body>
+</html>
