@@ -19,6 +19,8 @@ app.get('/form',function(req,res){
 app.post('/article/new', function(){
     console.log(req.body)
 })
+
+
 // var server = http.createServer(function(req, res){
 //   res.statusCode = 200;
 //   sre.setHeader('Content-Type', 'text/html');
